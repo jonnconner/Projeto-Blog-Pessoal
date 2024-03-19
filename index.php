@@ -12,6 +12,30 @@
         "desc" => "Apenas eu, eu mesmo, explorando o universo do conhecimento.
         Tenho interesse em programação em geral, com ênfase em desenvolvimento de software.
         E quero compartilhar minhas ideias com voce!");
+    //bloco top 5
+    $Bloco_top5 = array(
+        1 => array(
+            "img" => "https://pm1.aminoapps.com/7123/9aff01a8f27cab834ee6d3a5c6d6ef7bd4a9ead1r1-588-636v2_hq.jpg",
+            "titulo" => "Dez motivos para aprender HTML5 e CSS",
+            "nComents" =>142),
+        2 => array (
+            "img" => "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt0e5fab5cc44767e0/60deacc421d15821fe7bcbad/e2b7206cf38259fa5b4b340816691b6b8630c6dd.jpg?auto=webp&format=pjpg&width=3840&quality=60",
+            "titulo" => "Experiência em gravidade 0",
+            "nComents" => 10),
+        3 => array(
+            "img" => "https://i.ytimg.com/vi/lkn_OjfdZZA/maxresdefault.jpg",
+            "titulo" => "Como morar sozinho",
+            "nComents" => 3),
+        4 => array(
+            "img" => "https://s2-autoesporte.glbimg.com/VTlTZKdozDEz6NNKu0ZxwwY9DXs=/0x0:2247x1685/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2022/F/W/v5tfPFQyeswP9muWBTiQ/mack.jpg",
+            "titulo" => "Melhores músicas anos 90",
+            "nComents" => "3"),
+        5 => array(
+            "img" => "https://images.tcdn.com.br/img/img_prod/460977/action_figure_peter_parker_tobey_maguire_spider_man_homem_aranha_escala_1_6_thunder_toys_estilo_hot__116361_1_8613665f246ff256c076effb59ff099f.jpg",
+            "titulo" => "O que  fazer em sábado chuvoso",
+            "nComents" => 2)
+        );
+    
     
     //postagem 1
     $PostTit1 = "GAMES";
@@ -125,39 +149,39 @@
                 </div>
                 <ul class="w3-ul w3-hoverable w3-white">
                     <li class="w3-padding-16">
-                        <img src="https://pm1.aminoapps.com/7123/9aff01a8f27cab834ee6d3a5c6d6ef7bd4a9ead1r1-588-636v2_hq.jpg"
-                            class="w3-left w3-margin-right" style="width: 50px;">
-                        <span class="w3-large"> Dez motivos para aprender HTML5 e CSS</span>
+                        <img src="<?php echo $Bloco_top5 [1] ["img"] ?>
+                            "class="w3-left w3-margin-right" style="width: 50px;">
+                        <span class="w3-large"> <?php echo $Bloco_top5 [1] ['titulo']?> </span>
                         <br>
-                        <span>Comentários: 142</span>
+                        <span>Comentários: <?php echo $Bloco_top5[1] ["nComents"]?></span>
                     </li>
                     <li class="w3-padding-16">
-                        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt0e5fab5cc44767e0/60deacc421d15821fe7bcbad/e2b7206cf38259fa5b4b340816691b6b8630c6dd.jpg?auto=webp&format=pjpg&width=3840&quality=60"
-                            class="w3-left w3-margin-right" style="width: 50px;">
-                        <span class="w3-large">Experiência em Gravidade 0</span>
+                        <img src="<?php echo $Bloco_top5 [2]["img"]?>
+                            "class="w3-left w3-margin-right" style="width: 50px;">
+                        <span class="w3-large"><?php echo $Bloco_top5[2] ["titulo"]?></span>
                         <br>
-                        <span>Comentarios: 10</span>
+                        <span>Comentarios: <?php echo $Bloco_top5 [2] ["nComents"]?></span>
                     </li>
                     <li class="w3-padding-16">
-                        <img src="https://i.ytimg.com/vi/lkn_OjfdZZA/maxresdefault.jpg" class="w3-left w3-margin-right "
+                        <img src="<?php echo $Bloco_top5[3] ["img"];?>" class="w3-left w3-margin-right "
                             style="width: 50px;">
-                        <span class="w3-large">Como Morar Sozinho</span>
+                        <span class="w3-large"><?php echo $Bloco_top5[3] ["titulo"]?></span>
                         <br>
-                        <span>Comentários: 7</span>
+                        <span>Comentarios:<?php echo $Bloco_top5 [3] ["nComents"]?></span>
                     </li>
                     <li class="w3-padding-16">
-                        <img src="https://s2-autoesporte.glbimg.com/VTlTZKdozDEz6NNKu0ZxwwY9DXs=/0x0:2247x1685/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2022/F/W/v5tfPFQyeswP9muWBTiQ/mack.jpg"
-                            class="w3-left w3-margin-right" style="width: 50px;">
-                        <span class="w3-large">Melhores Musicas Anos 90</span>
+                        <img src="<?php echo $Bloco_top5[4] ["img"] ?>
+                           " class="w3-left w3-margin-right" style="width: 50px;">
+                        <span class="w3-large"><?php echo $Bloco_top5[4] ["titulo"]?></span>
                         <br>
-                        <span>Comentários: 3</span>
+                    <span>Comentários: <?php echo $Bloco_top5[4] ["nComents"]?></span>
                     </li>
                     <li class="w3-padding-16">
-                        <img src="https://images.tcdn.com.br/img/img_prod/460977/action_figure_peter_parker_tobey_maguire_spider_man_homem_aranha_escala_1_6_thunder_toys_estilo_hot__116361_1_8613665f246ff256c076effb59ff099f.jpg"
+                        <img src="<?php echo $Bloco_top5[5] ["img"]?>"
                             class="w3-left w3-margin-right" style="width: 50px;">
-                        <span class="w3-large">O que fazer num sábado chuvoso</span>
+                        <span class="w3-large"><?php echo $Bloco_top5[5] ["titulo"]?></span>
                         <br>
-                        <span>Comentários: 2</span>
+                        <span>Comentários: <?php echo $Bloco_top5[5] ["nComents"]?></span>
                     </li>
                 </ul>
             </div>
