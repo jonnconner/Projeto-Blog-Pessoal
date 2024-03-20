@@ -148,41 +148,22 @@
                     <h4>Postagens Mais Populares</h4>
                 </div>
                 <ul class="w3-ul w3-hoverable w3-white">
+                    <?php
+                        for ($i=1; $i<=5;$i++)
+                        {
+                            $I = $Bloco_top5[$i]['img'];
+                            $T = $Bloco_top5[$i]['titulo'];
+                            $N = $Bloco_top5[$i]['nComents'];?>
                     <li class="w3-padding-16">
-                        <img src="<?php echo $Bloco_top5 [1] ["img"] ?>
-                            "class="w3-left w3-margin-right" style="width: 50px;">
-                        <span class="w3-large"> <?php echo $Bloco_top5 [1] ['titulo']?> </span>
+                        <img src="<?php echo $Bloco_top5 [$i] ["img"] ?>
+                            "class="w3-left w3-margin-right" style="width: 40px;">
+                        <span class="w3-large"> <?php echo $Bloco_top5 [$i] ['titulo']?> </span>
                         <br>
-                        <span>Comentários: <?php echo $Bloco_top5[1] ["nComents"]?></span>
+                        <span>Comentários: <?php echo $Bloco_top5[$i] ["nComents"]?></span>
                     </li>
-                    <li class="w3-padding-16">
-                        <img src="<?php echo $Bloco_top5 [2]["img"]?>
-                            "class="w3-left w3-margin-right" style="width: 50px;">
-                        <span class="w3-large"><?php echo $Bloco_top5[2] ["titulo"]?></span>
-                        <br>
-                        <span>Comentarios: <?php echo $Bloco_top5 [2] ["nComents"]?></span>
-                    </li>
-                    <li class="w3-padding-16">
-                        <img src="<?php echo $Bloco_top5[3] ["img"];?>" class="w3-left w3-margin-right "
-                            style="width: 50px;">
-                        <span class="w3-large"><?php echo $Bloco_top5[3] ["titulo"]?></span>
-                        <br>
-                        <span>Comentarios:<?php echo $Bloco_top5 [3] ["nComents"]?></span>
-                    </li>
-                    <li class="w3-padding-16">
-                        <img src="<?php echo $Bloco_top5[4] ["img"] ?>
-                           " class="w3-left w3-margin-right" style="width: 50px;">
-                        <span class="w3-large"><?php echo $Bloco_top5[4] ["titulo"]?></span>
-                        <br>
-                    <span>Comentários: <?php echo $Bloco_top5[4] ["nComents"]?></span>
-                    </li>
-                    <li class="w3-padding-16">
-                        <img src="<?php echo $Bloco_top5[5] ["img"]?>"
-                            class="w3-left w3-margin-right" style="width: 50px;">
-                        <span class="w3-large"><?php echo $Bloco_top5[5] ["titulo"]?></span>
-                        <br>
-                        <span>Comentários: <?php echo $Bloco_top5[5] ["nComents"]?></span>
-                    </li>
+                    <?php
+                        }
+                        ?>
                 </ul>
             </div>
             <hr>
