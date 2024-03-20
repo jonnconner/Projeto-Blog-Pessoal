@@ -1,27 +1,44 @@
 <?php
-$colegas = array(
-    1 => array (
-        "Nome" => "Carlos",
-        "Telefone" => "999999999",
-        "Endereço" => "Rua xxxx",
-        "Data Nasc" => "05/11/2002"),
-    2 => array(
-        "Nome" => "Joana",
-        "Telefone" => "9999999",
-        "Endereço" => "Rua xxxx",
-        "Data Nasc" => "01/05/1991"),
-    3 => array(
-        "Nome" => "Marisa",
-        "Telefone" => "999999999",
-        "Endereço" => "Rua Xxxxxxx",
-        "Data Nasc" => "10/03/2004"),
-    4 => array(
-        "Nome" => "Joaquim",
-        "Telefone" => "00000000",
-        "Endereço" => "Rua yyyyyyyy",
-        "Data Nasc" => "10/08/1997",)
-    );
-    echo "<br>" .$colegas[4] ["Nome"]. "</br>";
-    echo "-Telefone:".$colegas[4] ["Telefone"]. "<br>";
-    echo "<b>" .$colegas[3] ["Nome"]. "</b><br>";
-    echo "-Data de Nascimento:" .$colegas[3] ["Data Nasc"]. "<br>";
+$mes=1;
+switch ($mes)
+{
+    case 1:
+        echo ("Janeiro");
+        break;
+    case 2:
+        echo ("Fevereiro");
+        break;
+    case 3:
+        echo ("Março");
+        break;
+    case 4:
+        echo ("Abril");
+        break;
+    case 5:
+        echo ("Maio");
+        break;
+    case 6:
+        echo ("Junho");
+        break;
+    case 7:
+        echo ("Julho");
+        break;
+    case 8:
+        echo ("Agosto");
+        break;
+    case 9:
+        echo ("Setembro");
+        break;
+    case 10:
+        echo ("Outubro");
+        break;
+    case 11:
+        echo ("Novembro");
+        break;
+    case 12:
+        echo ("Dezembro");
+        break;
+    default:
+        echo ("Mês Inválido");
+}
+?>
